@@ -10,13 +10,7 @@ function getTime() {
 	seconds = (y2k - now) / 1000 - (24 * 60 * 60 * daysRound) - (60 * 60 * hoursRound) - (60 * minutesRound);
 	secondsRound = Math.round(seconds);
 	if (daysRound <= "-1") {
-		$("#quedan").remove();
-		$("#pre").remove();
-		$("#Flash").remove();
-		$("#counter").css("font-size","38px");
-		if($(window).width() < 992){
-			$("#counter").css("font-size","23px");
-		}
+		//Si el conteo regresivo del script el valor de los días es mayor a -1 se para el script, ya que la fecha esperada se a cumplido, es necesaria este línea de código ya que si no se pone seguiria el conteo regresívo pero en valores negativos.
 	}
 	else{
 		document.getElementById('dias').innerHTML = daysRound;

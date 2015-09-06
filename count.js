@@ -1,6 +1,6 @@
 function getTime() {
 	now = new Date();
-	y2k = new Date("Sep 4 2015 13:38:20");
+	y2k = new Date("Sep 16 2015 00:00:00");
 	days = (y2k - now) / 1000 / 60 / 60 / 24;
 	daysRound = Math.floor(days);
 	hours = (y2k - now) / 1000 / 60 / 60 - (24 * daysRound);

@@ -1,7 +1,7 @@
 $(document).onload(getTime());
 function getTime() {
 	now = new Date();
-	fecha = new Date("Dec 25 2015 15:00:00");
+	fecha = new Date("2016-08-09 23:46:48 UTC");
 	days = (fecha - now) / 1000 / 60 / 60 / 24;
 	daysRound = Math.floor(days);
 	hours = (fecha - now) / 1000 / 60 / 60 - (24 * daysRound);
